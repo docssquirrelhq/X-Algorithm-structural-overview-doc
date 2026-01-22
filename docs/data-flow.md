@@ -27,7 +27,7 @@ The recommendation pipeline processes a `ScoredPostsQuery` to generate a ranked 
 - **Side Effects**: Caching and logging.
 - **Response**: Protobuf output.
 
-The flow emphasizes parallelism (e.g., async fetches), error resilience (e.g., fallbacks on ML failures), and optimizations like bloom filters for O(1) probabilistic checks on large `seen_ids`/`served_ids` sets. Total latency targets <100ms via gRPC to Python services.
+The flow emphasizes parallelism (e.g., async fetches), error resilience (e.g., fallbacks on ML failures), and optimizations like bloom filters for O(1) probabilistic checks on large `seen_ids`/`served_ids` sets. Total latency targets < 100ms via gRPC to Python services.
 
 ### Visual Flow Diagram
 
